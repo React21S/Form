@@ -1,0 +1,45 @@
+/* ####### Form Components ##### */
+
+
+
+form{
+    background-color:var(--bg-color-4);
+    color: var(--white);
+    padding: 1rem 3rem;
+    font-size: 20px;
+    margin: 10px auto;
+}
+  
+  input,
+  textarea, select {
+    padding: 20px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    width: 500px;
+    margin-top: 20px;
+    font-family: var(--font-2);
+    background-color: var(--color-3);
+  }
+  /* ####### input button ##### */
+  input[type="submit"]{
+    background-color: var(--bg-color-1);
+    color:var(--white);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--color-4);
+    font-size: 20px;
+    margin-left: 280px;
+    width: 300px;
+    text-transform: uppercase;
+  }
+  
+  label {
+    display: inline-block;
+    width: 10%;
+  }
+  form div{
+    margin: 1rem 0;
+  }
+  
+  
