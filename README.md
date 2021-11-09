@@ -1,6 +1,9 @@
 # Form Application 
-![screenshot](/img/Form.png)
+
 ### Lecture on how to make form at Business college Helsinki (bc.fi)
+### Empty Form 
+![screenshot](/img/Form.png)
+### Filled form 
 ![screenshot](/img/Form2.png)
 
 ### Popup message 
