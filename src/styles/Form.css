@@ -22,8 +22,8 @@ form{
     background-color: var(--color-3);
   }
   /* ####### input button ##### */
-  input[type="submit"]{
-    background-color: var(--bg-color-1);
+  form input[type="submit"]{
+    background-color: var(--bg-color-4);
     color:var(--white);
     border: none;
     border-radius: 5px;
@@ -34,6 +34,11 @@ form{
     text-transform: uppercase;
   }
   
+ .submit input[type="submit"]:hover{
+   background-color: var(--color-1);
+  }
+  
+
   label {
     display: inline-block;
     width: 10%;

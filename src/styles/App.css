@@ -8,9 +8,10 @@
   --bg-color-1:#0b520b;
   --bg-color-2:#333333e6;
   --bg-color-3:#becf21;
-  --bg-color-4:#032b58;
+  --bg-color-4:#0b213b80;
+  --bg-color-5:#0b520b;
 
-  --color-1:red;
+  --color-1:#7290be;
  --color-2:#cecece;
  --color-3:#f5f5f5;
  --color-4:#333;
@@ -27,33 +28,35 @@
 }
 
 body {
-  margin: auto;
   font-family: var(--font-2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 header{
-  margin-top: 10px;
   padding: 30px;
-  align-items: center;
   text-align: center;
   font-size: 40px;
   background-color: var(--bg-color-4);
   color: var(--white);
   width: 100%;
- text-transform: uppercase;
+  text-transform: uppercase;
 
 }
 
 
 footer{
-  text-align: center;
   width: 100%;
+  position: absolute;
   bottom: 0;
-  background-color: var(--bg-color-4);
   padding: 20px;
   text-align: center;
   color: var(--white);
-  position: absolute;
+  background-color: var(--bg-color-4);
 }
+
+footer{
+  position: fixed;
+}
+
+
