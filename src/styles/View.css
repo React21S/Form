@@ -36,5 +36,8 @@
     font-size: 1.5rem;
   }
   
-  
+  .view h1{
+    text-align: center;
+    color: var(--white);
+  }
   

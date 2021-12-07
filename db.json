@@ -1,26 +1,60 @@
 {
-    "notes": [
-      { "id": 1, 
-        "firstName": "Adesola", 
-        "lastName": "Femi",
-        "phoneNumber":"12345678", 
-        "role":"CEO", 
-        "message":"It is good to be good"
+  "notes": [
+    {
+      "id": 1,
+      "firstName": "Adesola",
+      "lastName": "Femi",
+      "phoneNumber": "12345678",
+      "role": "CEO",
+      "message": "It is good to be good"
     },
-    { "id": 2, 
-        "firstName": "Ade", 
-        "lastName": "Femi",
-        "phoneNumber":"+35812345678", 
-        "role":"Developer", 
-        "message":"It is good to be good"
+    {
+      "id": 2,
+      "firstName": "Ade",
+      "lastName": "Femi",
+      "phoneNumber": "+35812345678",
+      "role": "Developer",
+      "message": "It is good to be good"
     },
-    { "id": 3, 
-        "firstName": "Sola", 
-        "lastName": "Oyin",
-        "phoneNumber":"+45612345678", 
-        "role":"Teacher", 
-        "message":"It is good to be good, ok "
+    {
+      "id": 3,
+      "firstName": "Sola",
+      "lastName": "Oyin",
+      "phoneNumber": "+45612345678",
+      "role": "Teacher",
+      "message": "It is good to be good, ok "
+    },
+    {
+      "firstName": "Femi",
+      "lastName": "Adesola",
+      "phoneNumber": "+358123456789",
+      "role": "Developer",
+      "message": "This is a new cool from Margit ",
+      "id": 4
+    },
+    {
+      "firstName": "Femi",
+      "lastName": "Adesola",
+      "phoneNumber": "+358123456789",
+      "role": "Developer",
+      "message": "it doesn't matter",
+      "id": 5
+    },
+    {
+      "firstName": "Femi",
+      "lastName": "Seyi",
+      "phoneNumber": "+35812345",
+      "role": "CEO",
+      "message": "Nice to meet you ",
+      "id": 6
+    },
+    {
+      "firstName": "Margrit",
+      "lastName": "Tennosaar",
+      "phoneNumber": "+3581234",
+      "role": "Teacher",
+      "message": "Best Teacher of the year 2021",
+      "id": 7
     }
-    ]
+  ]
 }
-  

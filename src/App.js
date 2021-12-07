@@ -30,6 +30,7 @@ class App extends Component {
   componentDidMount(){
     axios.get("http://localhost:3001/notes")
     .then((res)=>{this.setState({data:res.data});
+    
   });
   }
 
@@ -42,6 +43,16 @@ class App extends Component {
     ev.preventDefault();
     this.setState({showPopup:true})
   }
+  // For posting to local db
+postHandler=()=>{
+  axios.post("http://localhost:3001/notes", this.state.inputData)
+  .then((res)=>{
+    console.log(res);
+    this.setState({showPopup:false});
+  })
+  .catch((error)=>console.log(error));
+};
+
   render() {
     
     return (
@@ -54,10 +65,14 @@ class App extends Component {
 
           </div>
         <div className="Notes">
-        {this.state.showPopup && <Popup{...this.state.inputData}/>}
+        {this.state.showPopup && <Popup{...this.state.inputData} postForm={this.postHandler}/>}
 
         {this.state.data.map((note)=>
-        <div className="note"><Notes {...note}/></div>)}
+        <div className="notes">
+          <div className="note" key={note.id}><Notes {...note} />
+          </div>
+        </div>
+        )}
           
         </div>
         </main>

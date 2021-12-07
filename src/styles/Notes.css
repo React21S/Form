@@ -1,8 +1,10 @@
 .Notes{
- margin: 4rem; 
  padding: 20px;
- 
+ background-color: var(--color-2);
+}
 
+.notes{
+    margin-left: 5rem;
 }
 
 .note{
@@ -11,11 +13,13 @@
     padding:20px;
     box-shadow: 0 3px 8px 7px var(--color-2), 0 6px 20px 0 ;
     width: 70%;
+    background-color: var(--white);
 }
 
 .Notes p{
     margin-left: 50px;
 }
+
 .Notes p span{
     margin: 10px;
     font-family: var(--font-1);
