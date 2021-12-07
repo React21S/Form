@@ -15,11 +15,14 @@ import React, { Component } from 'react';
 
 class App extends Component {
   state = {
-    firstName: "",
-    lastName: "",
-    phoneNumber: "",
-    role: "",
-    message: "",
+    inputData:{
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      role: "",
+      message: "",
+    },
+    
     showPopup: false, 
     data:[]
   }
@@ -31,31 +34,27 @@ class App extends Component {
   }
 
   formHandler=(event)=>{
-    this.setState({[event.target.name]:event.target.value});
+    this.setState({
+      inputData:{ ...this.state.inputData, [event.target.name]:event.target.value},
+     });
   }
   popUpHandler = (ev)=>{
     ev.preventDefault();
     this.setState({showPopup:true})
   }
   render() {
-    const props={
-      firstName:this.state.firstName,
-      lastName:this.state.lastName,
-      phoneNumber:this.state.phoneNumber,
-      role:this.state.role,
-      message:this.state.message, 
-    };
+    
     return (
       <div>
         <Header/>
         <main>
           <div className="formArea">
           <Form change={this.formHandler} submit={this.popUpHandler}/>
-        <View {...props}/>
+        <View {...this.state.inputData}/>
 
           </div>
         <div className="Notes">
-        {this.state.showPopup && <Popup{...props}/>}
+        {this.state.showPopup && <Popup{...this.state.inputData}/>}
 
         {this.state.data.map((note)=>
         <div className="note"><Notes {...note}/></div>)}
