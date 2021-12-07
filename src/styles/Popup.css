@@ -1,9 +1,6 @@
 /* ####### Popup Component ############### */
 /* ####### Button Popup ##### */
 
-
-
-
 .overlay button{
     background-color: var(--bg-color-1);
     color:var(--white);
@@ -30,21 +27,21 @@
   }
   
   .overlay{
-    background-color: var(--bg-color-3);
-    color:var(--black);
-    padding: 30px;
-    width: 60%;
-    height: 60%;
-    box-shadow: 0 0 5px var(--bg-color-2);
-   position: relative;
+    position: relative;
     top:0;
     left:0;
+    background-color: var(--bg-color-3);
+    color:var(--black);
+    padding: 20px;
+    width: 80%;
+    height: 70%;
+    box-shadow: 0 0 5px var(--bg-color-2);
     margin: 0 auto;
   
   }
   
   .overlay p, .overlay h1{
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     font-size: 30px;
   }
   
@@ -56,6 +53,7 @@
     margin: 50px;
     font-family: var(--font-1);
     font-size: 2.5rem;
+    padding: 1rem 0;
   }
   
   .overlay .check{

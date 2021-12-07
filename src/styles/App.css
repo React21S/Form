@@ -47,7 +47,6 @@ header{
 
 footer{
   width: 100%;
-  position: absolute;
   bottom: 0;
   padding: 20px;
   text-align: center;
@@ -55,8 +54,5 @@ footer{
   background-color: var(--bg-color-4);
 }
 
-footer{
-  position: fixed;
-}
 
 

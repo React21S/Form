@@ -1,0 +1,26 @@
+{
+    "notes": [
+      { "id": 1, 
+        "firstName": "Adesola", 
+        "lastName": "Femi",
+        "phoneNumber":"12345678", 
+        "role":"CEO", 
+        "message":"It is good to be good"
+    },
+    { "id": 2, 
+        "firstName": "Ade", 
+        "lastName": "Femi",
+        "phoneNumber":"+35812345678", 
+        "role":"Developer", 
+        "message":"It is good to be good"
+    },
+    { "id": 3, 
+        "firstName": "Sola", 
+        "lastName": "Oyin",
+        "phoneNumber":"+45612345678", 
+        "role":"Teacher", 
+        "message":"It is good to be good"
+    }
+    ]
+}
+  

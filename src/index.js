@@ -4,6 +4,7 @@ import "./styles/App.css";
 import "./styles/Popup.css";
 import "./styles/View.css";
 import "./styles/Form.css";
+import "./styles/Notes.css";
 import App from './App';
 
 

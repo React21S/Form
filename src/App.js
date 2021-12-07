@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import View from './components/View';
 import Popup from './components/Popup';
+import Notes from './components/Notes';
+import axios from "axios";
 
 
 
@@ -19,6 +21,13 @@ class App extends Component {
     role: "",
     message: "",
     showPopup: false, 
+    data:[]
+  }
+
+  componentDidMount(){
+    axios.get("http://localhost:3001/notes")
+    .then((res)=>{this.setState({data:res.data});
+  });
   }
 
   formHandler=(event)=>{
@@ -39,9 +48,21 @@ class App extends Component {
     return (
       <div>
         <Header/>
-        <Form change={this.formHandler} submit={this.popUpHandler}/>
+        <main>
+          <div className="formArea">
+          <Form change={this.formHandler} submit={this.popUpHandler}/>
         <View {...props}/>
-      {this.state.showPopup && <Popup{...props}/>}
+
+          </div>
+        <div className="Notes">
+        {this.state.showPopup && <Popup{...props}/>}
+
+        {this.state.data.map((note)=>
+        <div className="note"><Notes {...note}/></div>)}
+          
+        </div>
+        </main>
+       
        <Footer/>
       </div>
     );

@@ -1,0 +1,24 @@
+.Notes{
+ margin: 4rem; 
+ padding: 20px;
+
+}
+
+.note{
+    margin: 10px;
+    border: 1px solid var(--color-1);
+    padding:20px;
+    box-shadow: 0 3px 8px 7px var(--color-2), 0 6px 20px 0 ;
+   
+}
+
+.Notes p{
+    margin-left: 50px;
+}
+.Notes p span{
+    margin: 10px;
+    font-family: var(--font-1);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+   
+}
