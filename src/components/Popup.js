@@ -9,7 +9,7 @@ const Popup = ({firstName, lastName,phoneNumber, role, message, postForm}) => {
     return (
         <div className="popup">
             <div className="overlay">
-                <h1>Your Note</h1>
+                <h1>Check your information</h1>
                 <div>
                     <p>First name <span>{firstName}</span></p>
                     <p>Last name <span>{lastName}</span></p>
