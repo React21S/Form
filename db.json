@@ -57,19 +57,19 @@
       "id": 7
     },
     {
-      "firstName": "FemiA",
-      "lastName": "Adesola",
-      "phoneNumber": "+855",
-      "role": "CEO",
-      "message": "sss",
-      "id": 8
-    },
-    {
       "firstName": "Femi",
       "lastName": "Adesola",
       "phoneNumber": "+358123456789",
       "role": "Developer",
-      "message": "Jesus is Lord",
+      "message": "Testing ",
+      "id": 8
+    },
+    {
+      "firstName": "Femi",
+      "lastName": "Seyi",
+      "phoneNumber": "+358123456789",
+      "role": "CEO",
+      "message": "thanks",
       "id": 9
     }
   ]
