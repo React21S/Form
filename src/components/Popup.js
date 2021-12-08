@@ -17,7 +17,13 @@ const Popup = ({firstName, lastName,phoneNumber, role, message, postForm}) => {
                     <p>Role <span>{role}</span></p>
                     <p>Message <span>{message}</span> </p>
 
-                    <button onClick={postForm}>Yes, I am Sure</button>
+                    <button 
+                    onClick=
+
+                    {() => { postForm() }}
+                   
+                   
+                    >Yes, I am Sure</button>
                     <button className="check" onClick={closePopupHandler}>Nope Don't want to post it</button>
                 </div>
             </div>

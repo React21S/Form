@@ -5,8 +5,11 @@ import Footer from './components/Footer';
 import View from './components/View';
 import Popup from './components/Popup';
 import Notes from './components/Notes';
+
 import axios from "axios";
 
+import {db} from "./components/firebase.config-2";
+import {collection, addDoc} from "firebase/firestore";
 
 
 
@@ -27,11 +30,22 @@ class App extends Component {
     data:[]
   }
 
+  // For database
+  usersCollectionRef = collection(db, "users");
+  createUser = async () => {
+    await addDoc(this.usersCollectionRef, {
+      inputData:{ ...this.state.inputData}
+    });
+    this.postHandler();
+  };
+
+
   componentDidMount(){
     axios.get("http://localhost:3001/notes")
     .then((res)=>{this.setState({data:res.data});
     
-  });
+    
+  })
   }
 
   formHandler=(event)=>{
@@ -43,15 +57,17 @@ class App extends Component {
     ev.preventDefault();
     this.setState({showPopup:true})
   }
+  
   // For posting to local db
-postHandler=()=>{
-  axios.post("http://localhost:3001/notes", this.state.inputData)
-  .then((res)=>{
-    console.log(res);
-    this.setState({showPopup:false});
-  })
-  .catch((error)=>console.log(error));
-};
+  postHandler=()=>{
+    axios.post("http://localhost:3001/notes", this.state.inputData)
+    .then((res)=>{
+      console.log(res);
+      this.setState({showPopup:false});
+    })
+    .catch((error)=>console.log(error));
+
+  };
 
   render() {
     
@@ -65,7 +81,7 @@ postHandler=()=>{
 
           </div>
         <div className="Notes">
-        {this.state.showPopup && <Popup{...this.state.inputData} postForm={this.postHandler}/>}
+        {this.state.showPopup && <Popup{...this.state.inputData} postForm={this.createUser}/>}
 
         {this.state.data.map((note)=>
         <div className="notes">
