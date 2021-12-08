@@ -25,7 +25,7 @@ const Form = ({submit,change} ) => {
                 <div>
                     <label htmlFor="role">Role</label>
                     <select name="role" id="role" onChange = {change}>
-                        <option value="" >---Select Your Role---</option>
+                        <option value="" >---Select your role---</option>
                         <option value="CEO" >CEO</option>
                         <option value="Developer" >Developer</option>
                         <option value="Teacher">Teacher</option>
