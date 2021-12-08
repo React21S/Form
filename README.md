@@ -1,6 +1,10 @@
 # Form Application 
+- The purpose of this code is the ability to post and get information in JSON format from a database or local directory and display the data in UI. 
 
-### This program describes an application form where users can insert the required information and send it to a database or local base. 
+- For the user to get data from the database, the user needs to keep on running the local server with npm start and local DB server with npm run server.
+
+---
+### This program describes an application form where users can insert the required information and send it to a database or local directory. 
 ---
 ### Empty Form 
 ![screenshot](/img/Form.png)
