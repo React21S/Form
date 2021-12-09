@@ -37,6 +37,7 @@ class App extends Component {
       inputData:{ ...this.state.inputData}
     });
     this.postHandler();
+    window.location.reload();
   };
 
 
